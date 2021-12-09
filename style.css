@@ -14,13 +14,31 @@ main {
 }
 
 div#title h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  text-align: center;
 }
 
 div#cronometro,
 span {
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 button {
+  width: 150px;
+  height: 75px;
+  font-size: 26px;
+  border: none;
+  border-radius: 5px;
+}
+
+button#start {
+  background: rgb(46, 163, 46);
+}
+
+button#stop {
+  background: rgb(179, 21, 21);
+}
+
+button#reset {
+  background: rgb(206, 203, 32);
 }

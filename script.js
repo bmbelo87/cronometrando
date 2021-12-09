@@ -52,7 +52,7 @@ function cronometro() {
     horas = 0
   }
 
-  document.getElementById('centesimos').innerText = returnData(centesimos)
+  document.getElementById('centesimos').innerText = returnCent(centesimos)
   document.getElementById('segundos').innerText = returnData(segundos)
   document.getElementById('minutos').innerText = returnData(minutos)
   document.getElementById('horas').innerText = returnData(horas)
@@ -60,4 +60,8 @@ function cronometro() {
 
 function returnData(input) {
   return input > 9 ? input : `0${input}`
+}
+
+function returnCent(input) {
+  return input < 100 ? `0${input}` : input
 }
